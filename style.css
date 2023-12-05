@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#dialogue-box {
+  height: 10rem;
+  width: 95%;
+  margin-inline: 1rem;
+  color: #b4b4b4;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+span {
+  animation: shine 1.5s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #e0e0e0;
+  }
+  50% {
+    color: #5e5e5e;
+
+  }
+  75% {
+    color: #868686;
+  }
+  100% {
+    color: #cfcfcf;
+  }
+}
+
+input {
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  color: #b4b4b4;
+  caret-color: #b4b4b4;
+  font-size: 1.3rem;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#button-container {
+  position: absolute;
+  bottom: 13rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#button-container button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  border: solid 1px #b4b4b4;
+  border-radius: 6px;
+  padding: 1rem;
+  background: none;
+  color: #b4b4b4;
+  cursor: pointer;
+}
+
+#button-container button:hover {
+  color: #f0f0f0;
+}
